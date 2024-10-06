@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frozen2</title>
+    <link rel="icon" href="https://fav.farm/❄️" />
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    overflow: auto;
+}
+h1 {
+    color: green;
+}
+
+/* Content section */
+.content {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Frozen overlay styles */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it's on top of everything */
+    color: white;
+    font-size: 24px;
+}
+
+.overlay .message {
+    text-align: center;
+}
+
+.overlay button {
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+progress {
+  border: none;
+  background-color: #ccc; /* gray background */
+  padding: 0;
+  border-radius: 25%;
+}
+
+progress::-webkit-progress-bar {
+  background-color: #ccc; /* gray background */
+}
+
+progress::-webkit-progress-value {
+  background-color: #007bff; /* blue fill */
+}
+
+progress::-moz-progress-bar {
+  background-color: #007bff; /* blue fill */
+}
+#terminal{
+  height:100%;
+  width: 100%;
+}
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1 id="mainHeading" style="color: red;">HTML HACK</h1>
+        <p id="status" style="color: red;">HACK FREEZE IMPLEMENT...</p>
+        <progress id="progress" value="50" max="100" style="width: 300px; height: 20px;"></progress>
+        <h1 id="changing">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut aliquam nulla illum, magnam ea, nam modi fugit, distinctio commodi neque molestiae quisquam iusto. Natus beatae nemo, eligendi saepe sit perspiciatis.
+        </h1>
+        <h1 id="changing">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut aliquam nulla illum, magnam ea, nam modi fugit, distinctio commodi neque molestiae quisquam iusto. Natus beatae nemo, eligendi saepe sit perspiciatis.
+        </h1>
+        <h1 id='changing'>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut aliquam nulla illum, magnam ea, nam modi fugit, distinctio commodi neque molestiae quisquam iusto. Natus beatae nemo, eligendi saepe sit perspiciatis.
+        </h1>
+        <h1 id="change">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut aliquam nulla illum, magnam ea, nam modi fugit, distinctio commodi neque molestiae quisquam iusto. Natus beatae nemo, eligendi saepe sit perspiciatis.
+        </h1>
+        <h1 id="changing">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut aliquam nulla illum, magnam ea, nam modi fugit, distinctio commodi neque molestiae quisquam iusto. Natus beatae nemo, eligendi saepe sit perspiciatis.
+        </h1>
+        <h1 id="changing">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut aliquam nulla illum, magnam ea, nam modi fugit, distinctio commodi neque molestiae quisquam iusto. Natus beatae nemo, eligendi saepe sit perspiciatis.
+        </h1>
+        <h1 id="changing">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut aliquam nulla illum, magnam ea, nam modi fugit, distinctio commodi neque molestiae quisquam iusto. Natus beatae nemo, eligendi saepe sit perspiciatis.
+        </h1>
+    </div>
+
+    <!-- Overlay that simulates the frozen screen -->
+    <div id="frozenOverlay" class="overlay">
+        <div class="message">
+            <p></p>
+            <button style="position: absolute; top: -10px; left: 0px; background-color: white; z-index: 10;" onclick="unfreezeScreen()"></button>
+            <button style="position: absolute; top: 30px; left: 0px; background-color: white; z-index: 1;" onclick="draw()"></button>
+            <button style="position: absolute; top: 60px; left: 0px; background-color: white; z-index: 10;" onclick="setup()"></button>
+            <button style="position: absolute; top: 90px; left: 0px; background-color: white; z-index: 1;" onclick="draw()"></button>
+            <button style="position: absolute; top: 120px; left: 0px; background-color: white; z-index: 10;" onclick="setup()"></button>
+            <button style="position: absolute; top: 150px; left: 0px; background-color: white; z-index: 1;" onclick="draw()"></button>
+            <button style="position: absolute; top: -10px; right: 15px; background-color: white; z-index: 10;" onclick="setup()"></button>
+            <button style="position: absolute; top: 30px; right: 15px; background-color: white; z-index: 1;" onclick="draw()"></button>
+            <button style="position: absolute; top: 60px; right: 15px; background-color: white; z-index: 10;" onclick="setup()"></button>
+            <button style="position: absolute; top: 90px; right: 15px; background-color: white; z-index: 1;" onclick="draw()"></button>
+            <button style="position: absolute; top: 120px; right: 15px; background-color: white; z-index: 10;" onclick="setup()"></button>
+            <button style="position: absolute; top: 150px; right: 15px; background-color: white; z-index: 1;" onclick="draw()"></button>
+        </div>
+    </div>
+
+    <script>
+        function runTerminalScript() {
+    // Your provided script goes here
+    function color(color_name, content) {
+        // ... (rest of the color function)
+    }
+
+    const itemtypes = [
+        // ... (itemtypes array)
+    ];
+
+    const commands = {
+        ls: function() {
+            // ... (ls function)
+        },
+        head: function() {
+            // ... (head function)
+        }
+    };
+
+    const settings = {
+        checkArity: false,
+        greetings: color("red", "aras-hacker"),
+        prompt: color("green", "$> "),
+        pipe: true,
+    };
+
+    // Make sure jQuery and jQuery Terminal are loaded before running this
+    if (typeof $ !== 'undefined' && $.terminal) {
+        const term = $("body").terminal(commands, settings);
+        term.exec("ls 1 | head");
+    } else {
+        console.error("jQuery or jQuery Terminal is not loaded");
+    }
+}
+
+        const progress = document.getElementById('progress');
+        const status = document.getElementById('status');
+        const frozenOverlay = document.getElementById('frozenOverlay');
+
+        // Set the initial value to 0
+        progress.value = 0;
+
+        // Function to update the progress bar
+        function updateProgress() {
+            // Increment the value by 1
+            progress.value += 1;
+
+            // Check if the value has reached the maximum
+            if (progress.value >= progress.max) {
+                // Update the status text
+                status.textContent = 'HACK FREEZE SUCCESS!';
+                status.style.color = 'green';
+                
+
+                mainHeading.textContent = 'HACK COMPLETE!';
+                change.textContent = 'Psalms​​ Chapter 15 A Psalm of David .1 LORD, who shall abide in thy tabernacle? who shall dwell in thy holy hill? 2 He that walketh uprightly, and worketh righteousness, and speaketh the truth in his heart. 3 He that backbiteth not with his tongue, nor doeth evil to his neighbour, nor taketh up a reproach against his neighbour. 4 In whose eyes a vile person is contemned; but he honoureth them that fear the LORD. He that sweareth to his own hurt, and changeth not. 5 He that putteth not out his money to usury, nor taketh reward against the innocent. He that doeth these things shall never be moved.';
+                change.style.color = '#007bff'
+                
+                document.body.style.background = 'black';
+                const loremTextElements = document.querySelectorAll('.content h1:not(#mainHeading)');
+        loremTextElements.forEach(element => {
+            element.style.color = 'black';
+        });
+
+                // Show the frozen overlay
+                frozenOverlay.style.display = 'flex';
+                
+                // Disable scrolling
+                disableScroll();
+                
+                // Stop the interval
+                clearInterval(progressInterval);
+
+                // Run the terminal script
+        setTimeout(runTerminalScript, 1000); // Delay of 1 second
+            }
+        }
+        
+
+        // Start updating the progress bar every 100ms
+        const progressInterval = setInterval(updateProgress, 100);
+
+        // Function to unfreeze the screen
+        function unfreezeScreen() {
+            frozenOverlay.style.display = 'none';
+            enableScroll();
+            console.log("Unfreeze button clicked, overlay should disappear.");
+        }
+
+        // Functions to disable and enable scrolling
+        function disableScroll() {
+            window.addEventListener('scroll', preventScroll, { passive: false });
+            window.addEventListener('wheel', preventScroll, { passive: false });
+            window.addEventListener('touchmove', preventScroll, { passive: false });
+            window.addEventListener('keydown', preventScrollKeys, { passive: false });
+        }
+
+        function enableScroll() {
+            window.removeEventListener('scroll', preventScroll);
+            window.removeEventListener('wheel', preventScroll);
+            window.removeEventListener('touchmove', preventScroll);
+            window.removeEventListener('keydown', preventScrollKeys);
+        }
+
+        function preventScroll(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            return false;
+        }
+
+        function preventScrollKeys(e) {
+            if (['ArrowUp', 'ArrowDown', 'Space', 'PageUp', 'PageDown', 'Home', 'End'].includes(e.code)) {
+                e.preventDefault();
+                return false;
+            }
+        }
+        class ProgressBar {
+  constructor(x, y, width, height, maxValue) {
+    this.x = x;
+    this.y = y;
+    this.width = width;
+    this.height = height;
+    this.maxValue = maxValue;
+    this.value = 0;
+  }
+
+  update(value) {
+    this.value = value;
+  }
+
+  draw() {
+    const progress = this.value / this.maxValue;
+    const barWidth = this.width * progress;
+    fill(255); // white
+    rect(this.x, this.y, this.width, this.height);
+    fill(0, 255, 0); // green
+    rect(this.x, this.y, barWidth, this.height);
+  }
+}
+let progressBar;
+
+function setup() {
+  createCanvas(400, 200);
+  progressBar = new ProgressBar(50, 50, 300, 20, 100);
+}
+
+function draw() {
+  background(220);
+  progressBar.update(frameCount);
+  progressBar.draw();
+}
+    </script>
+    <script src="./script.js">
+
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/jquery.terminal/js/jquery.terminal.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/jquery.terminal/css/jquery.terminal.min.css"/>
+    
+</body>
+</html>
